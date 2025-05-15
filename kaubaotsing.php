@@ -9,22 +9,19 @@ if(isSet($_REQUEST["otsisona"])){
 }
 $kaubad=kysiKaupadeAndmed($sorttulp, $otsisona);
 ?>
-
 <!DOCTYPE html>
 <html lang="et">
-
 <head>
     <title>Kaupade leht</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 </head>
-
 <body>
-<h1>Kaubad | Kaubagruppid</h1>
-
-<!--Otsing-->
-
+<h1>Kaubad | Kaubagrupid</h1>
+<!--otsing -->
 <form action="kaubaotsing.php">
     Otsi: <input type="text" name="otsisona" />
+
+
     <table>
         <tr>
             <th><a href="kaubaotsing.php?sort=nimetus">Nimetus</a></th>
@@ -40,6 +37,5 @@ $kaubad=kysiKaupadeAndmed($sorttulp, $otsisona);
         <?php endforeach; ?>
     </table>
 </form>
-
 </body>
 </html>

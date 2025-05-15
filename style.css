@@ -1,0 +1,131 @@
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7f9;
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+    animation: fadeIn 0.5s ease-in;
+}
+
+h1, h2 {
+    color: #34495e;
+    animation: slideInDown 0.5s ease-out;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    animation: fadeIn 0.6s ease;
+}
+
+/* Поля формы */
+input[type="text"], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Кнопки */
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    animation: fadeIn 0.7s ease;
+}
+
+table, th, td {
+    border: 1px solid #dfe6e9;
+}
+
+th {
+    background-color: #ecf0f1;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover td {
+    background-color: #f0f8ff;
+}
+
+/* Ссылки в таблице */
+td a {
+    text-decoration: none;
+    color: #e74c3c;
+    margin-right: 8px;
+    transition: color 0.3s ease;
+}
+
+td a:hover {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Definition list */
+dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+dt {
+    width: 150px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+dd {
+    flex: 1;
+    margin: 0 0 12px 0;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
